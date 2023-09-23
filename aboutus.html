@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Apple Chancery", cursive;
+  margin: 0;
+  background-color: #9fc088;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  
+
+}
+.row{
+    position: static;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #e0d8b0;
+  color: #c6e497;
+  margin: 8px;
+}
+.card a{
+    text-decoration: none;
+    color: #575e1d;
+
+}
+.card a:hover{
+    color: #926a2d;
+}
+.title a{
+    color: rgb(60, 85, 66);
+    text-decoration: none;
+}
+
+.about-section {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 50px;
+  text-align: center;
+  z-index: 1;
+  text-align: center;
+  background-color: #e0d8b0;
+  color: white;
+} 
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #e2c799;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #c09b5b;
+}
+.logo{
+    position: relative;
+    top: 65px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <img src="logostroll.png" alt="" class="logo">
+  <h2>About us</h2>
+  <!--<p>Resize the browser window to see that this page is responsive by the way.</p>-->
+</div>
+
+<h2 style="text-align:center; color: #2e2e2e;">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src= "Mahat.jpeg" alt="Mahat" style="width:100%">
+      <div class="container">
+        <h2><a href="#">Mahat Vasudev</a></h2>
+        <p class="title"><a href="#">FYBSC.DS Student</a></p>
+        <p><a href="#">Hello I am Mahat Vasudev</a> </p>
+        <p><a href="#">mahatvasudev9@gmail.com</a></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src= "Aarya.jpeg" alt="aarya" style="width:100%">
+      <div class="container">
+        <h2><a href="#">Aarya Singh</a></h2>
+        <p class="title"><a href="#">FYBSC.DS Student</a></p>
+        <p><a href="#">Hello I am Aarya Singh</a></p>
+        <p><a href="#">aaryasingh@gmail.com</a></p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <!--<div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>john@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>-->
+</div>
+
+</body>
+</html>
